@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+::-webkit-scrollbar {
+    background: none;
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #616161;
+    border-radius: 20px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: white;
+}
+
+nav .container {
+    border-bottom: 1px solid #333333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 150px;
+    padding: 20px 0px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555555;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+nav a:hover {
+    color: #BA3826;
+}
+
+.hero {
+    height: 90vh;
+    margin: 71px 150px 0px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.hero .container {
+    border: 1px solid #333;
+    box-shadow: 5px 5px 0px 0px #121212;
+    padding: 30px 0px 0px 0px;
+    display: flex;
+    background:
+        radial-gradient(at 18% 99%, rgb(223, 229, 113) 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 150% 8%, rgb(118, 249, 173) 0px, transparent 50%) repeat scroll 0% 0%,
+        radial-gradient(at 96% 70%, rgb(222, 81, 251) 0px, transparent 30%) repeat scroll 0% 0%,
+        radial-gradient(at 4% 49%, rgb(203, 88, 218) 0px, transparent 50%) repeat scroll 0% 0%;
+}
+
+.hero .caption {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.hero .caption h1,
+.hero .caption h2,
+.hero .caption p {
+    margin: 0;
+}
+
+.hero .caption h1 {
+    background: #BA3826;
+    padding: 5px 50px 5px 0px;
+    color: aliceblue;
+    font-size: 35px;
+    width: max-content;
+    letter-spacing: 5px;
+}
+
+.hero .caption h2 {
+    font-size: 24px;
+    padding-top: 10px;
+}
+
+.hero .caption h2 span:nth-child(1) {
+    color: #131C23;
+}
+
+.hero .caption h2 span:nth-child(2) {
+    color: #BA3826;
+}
+
+.hero .caption p {
+    padding-top: 30px;
+    color: #666;
+}
+
+.hero .btn-contact {
+    padding-top: 30px;
+    display: flex;
+    gap: 10px;
+}
+
+.about-section {
+    height: 90vh;
+    margin: 71px 150px 0px 150px;
+    display: flex;
+    align-items: center;
+}
+
+.about-section .caption {
+    width: 70%;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-section .caption h1,
+.about-section .caption p {
+    margin: 0;
+}
+
+.about-section .caption h1 {
+    padding: 5px 50px 5px 0px;
+    background: #BA3826;
+    color: aliceblue;
+    letter-spacing: 5px;
+    width: max-content;
+}
+
+.about-section .caption p {
+    color: #333;
+    padding-top: 10px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.about-section .caption small {
+    color: #333333;
+    font-size: 14px;
+}
+
+.about-section figure {
+    width: 50%;
+    position: relative;
+    display: flex;
+    justify-content: end;
+    margin-inline-end: 5px;
+}
+
+.about-section figure img {
+    border: 1px solid #333;
+    transform: translate(5, 5);
+    box-shadow: 5px 5px 0px 0px #121212;
+}
+
+footer {
+    margin-top: 60px;
+}
+
+footer .container {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #121212;
+    border-bottom: 1px solid #121212;
+    padding: 60px 0px;
+    margin: 0px 150px;
+    justify-content: space-between;
+}
+
+footer .container .contact h1 {
+    padding: 5px 50px 5px 0px;
+    background: #BA3826;
+    color: aliceblue;
+    letter-spacing: 5px;
+    width: max-content;
+}
+
+footer .container .contact ul {
+    list-style: none;
+    padding: 20px 0px 0px 0px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .container .contact ul li a {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-decoration: none;
+    color: #121212;
+}
+
+footer .container .contact ul li a p {
+    margin: 0;
+}
+
+footer .container .contact ul li a img {
+    border: none;
+}
+
+footer .container img {
+    border: 1px solid #333;
+}
+
+footer .copyright {
+    text-transform: uppercase;
+    margin: 0px 150px;
+    padding: 20px 0px;
+    color: #333333;
+    text-align: center;
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    nav .container {
+        margin: 0px 150px;
+    }
+
+    .hero {
+        margin: 71px 150px 0px 150px;
+    }
+
+    .about-section {
+        margin: 71px 150px 0px 150px;
+    }
+
+    footer .container {
+        margin: 0px 150px;
+        border-top: 1px solid #121212;
+        border-bottom: 1px solid #121212;
+    }
+
+    footer .copyright {
+        margin: 0px 150px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1280px) {
+    nav .container {
+        margin: 0px 100px;
+    }
+
+    .hero {
+        margin: 71px 100px 0px 100px;
+    }
+
+    .about-section {
+        margin: 71px 100px 0px 100px;
+    }
+
+    footer .container {
+        margin: 0px 100px;
+    }
+
+    footer .copyright {
+        margin: 0px 100px;
+    }
+}
+
+@media (min-width: 861px) and (max-width: 1219px) {
+    .hero .container img {
+        height: 400px;
+    }
+}
+
+@media (min-width: 761px) and (max-width: 999px) {
+    nav .container {
+        margin: 0px 60px;
+    }
+
+    .hero {
+        margin: 71px 60px 0px 60px;
+    }
+
+    .about-section {
+        margin: 71px 60px 0px 60px;
+    }
+
+    footer .container {
+        margin: 0px 60px;
+    }
+
+    footer .copyright {
+        margin: 0px 60px;
+    }
+}
+
+@media (min-width: 701px) and (max-width: 860px) {
+    .hero .container img {
+        height: 300px;
+    }
+
+    .about-section figure img {
+        height: 400px;
+    }
+
+    .about-section .caption p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    footer .container .logo-pers {
+        height: 250px;
+    }
+}
+
+@media (min-width: 651px) and (max-width: 760px) {
+    nav .container {
+        margin: 0px 30px;
+    }
+
+    .hero {
+        margin: 71px 30px 0px 30px;
+    }
+
+    .about-section {
+        margin: 71px 30px 0px 30px;
+    }
+
+    footer .container {
+        margin: 0px 30px;
+    }
+
+    footer .copyright {
+        margin: 0px 30px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 700px) {
+    .hero .container img {
+        height: 300px;
+    }
+
+    .about-section figure img {
+        height: 350px;
+    }
+
+    .about-section .caption p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    footer .container .logo-pers {
+        height: 200px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 650px) {
+    nav .container {
+        margin: 0px 16px;
+    }
+
+    .hero {
+        margin: 71px 16px 0px 16px;
+    }
+
+    .hero .caption {
+        padding-left: 30px;
+    }
+
+    .about-section {
+        margin: 71px 16px 0px 16px;
+    }
+
+    footer .container {
+        margin: 0px 16px;
+    }
+
+    footer .copyright {
+        margin: 0px 16px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 599px) {
+    nav .container {
+        margin: 0px 16px;
+    }
+
+    .hero {
+        margin: 71px 16px 0px 16px;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hero .caption {
+        padding-left: 0px;
+        align-self: start;
+    }
+
+    .hero .caption h2 {
+        padding-top: 5px;
+    }
+
+    .hero .caption p,
+    .hero .btn-contact {
+        padding-top: 15px;
+    }
+
+    .about-section {
+        margin: 71px 16px 0px 16px;
+        flex-direction: column;
+        align-items: normal;
+        height: max-content;
+    }
+
+    .about-section figure,
+    .about-section .caption {
+        width: 100%;
+    }
+
+    .about-section figure {
+        justify-content: center;
+        margin: 30px 0px 0px 0px;
+    }
+
+    footer .container {
+        margin: 0px 16px;
+        flex-direction: column-reverse;
+    }
+
+    footer .container .contact {
+        align-self: normal;
+        margin-top: 20px;
+    }
+
+    footer .container .contact ul li a {
+        font-size: 14px;
+        gap: 10px;
+    }
+
+    footer .copyright {
+        margin: 0px 16px;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero .container img {
+        height: 250px;
+    }
+
+    .hero .caption p,
+    .hero .btn-contact {
+        padding-top: 10px;
+    }
+
+    .about-section .caption p {
+        font-size: 14px;
+    }
+
+    footer .container .contact ul li a {
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    footer .container .contact ul li a img {
+        height: 18px;
+        width: 18px;
+    }
+}
